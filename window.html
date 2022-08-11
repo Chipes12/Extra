@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>XML a Excel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <input type="file" id="file-to-upload" accept="text/xml" name="file-to-upload" class="input-file" required>
+            <label for="file-to-upload" id="file-label"><i class="fa fa-upload" aria-hidden="true"></i>    Cargar archivo...</label>
+            <input id="path" name="path" type="file" webkitdirectory class="input-file"/>
+            <label for="path" id="path-label"><i class="fa fa-folder" aria-hidden="true"></i>  Ubicación...</label>
+            <div class="button-wrapper">
+                <button class="button" id="boton" onclick="xmlToExcel()">Generar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./parser-dom.js"></script>
+    <script src="./parser.js"></script>
+</body>
+</html>

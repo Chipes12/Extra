@@ -2,17 +2,20 @@
   "name": "extra",
   "version": "1.0.0",
   "description": "",
-  "main": "parser.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "jspdf": "^2.5.1",
+    "path": "^0.12.7",
     "xlsx": "^0.18.5",
     "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "electron": "^20.0.1"
   }
 }
